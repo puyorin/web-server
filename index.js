@@ -9,6 +9,7 @@ app.use(express.static(path.join(__dirname, "public")))
 //   console.log(req)
 //   res.send("<h1>トップページ!!</h1>")
 // })
+
 app.post("/api/v1/quiz", function (req, res) {
     const answer = req.body.answer;
     if(answer === "2"){
